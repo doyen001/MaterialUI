@@ -4,6 +4,7 @@ import "./App.css";
 
 // components
 import DashboardLayout from "./layout/DashboardLayout";
+import MainPageLayout from "./layout/MainPageLayout";
 import Dashboard from "./pages/Dashboard";
 import ErrorPage from "./pages/404";
 import Login from "./pages/Login";
@@ -27,10 +28,10 @@ const App = () => {
 
       {/* Dashboard Layout */}
 
-      <DashboardLayout>
+      <MainPageLayout>
         <Switch>
           <Route path="/" exact>
-            <Redirect to="/dashboard" />
+            <Redirect to="/MainPageLayout" />
           </Route>
 
           <Route path="/dashboard" component={Dashboard} />
@@ -45,7 +46,7 @@ const App = () => {
 
           <Route path="*" component={ErrorPage} />
         </Switch>
-      </DashboardLayout>
+      </MainPageLayout>
     </>
   );
 };

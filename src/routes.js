@@ -29,7 +29,7 @@ const PageRoutes = [
   },
   // dash
   {
-    path: "/dashboard",
+    path: "/dashboards",
     component: DashboardLayout,
     routes: [
       { path: "/dashboard/app", component: Dashboard },
