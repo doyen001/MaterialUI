@@ -1,5 +1,6 @@
 import DashboardLayout from "./layout/DashboardLayout";
 import AuthLayout from "./layout/AuthLayout";
+import MainPageLayout from "./layout/MainpageLayout";
 
 // components
 import Dashboard from "./pages/Dashboard";
@@ -14,8 +15,8 @@ const PageRoutes = [
   // default
   {
     path: "/",
-    component: DashboardLayout,
-    routes: [{ path: "/", component: Dashboard }],
+    component: MainPageLayout,
+    // routes: [{ path: "/", component: Dashboard }],
   },
   // auth
   {
