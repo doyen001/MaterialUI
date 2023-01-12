@@ -16,7 +16,7 @@ import UserMore from "./UserMore";
 
 // style
 const TableStyle = styled(Table)(({ theme }) => ({
-  // border: "1px solid",
+  border: "1px solid",
   minWidth: 500,
   overflowX: "auto",
 
